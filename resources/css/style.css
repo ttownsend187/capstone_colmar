@@ -3,17 +3,101 @@
 html{
   font-size: 16px;
   font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+}
+
 .image-container{
-  padding: 2rem 1.5rem;
-  width: 60%
+  width: 60%;
 }
 
+#sidebar .image-container{
+  height: auto;
+  width: 35%;
+  margin: 2rem;
+}
+.info {
+  width: 40%;
+}
+.content{
+  width: 65%;
+}
+/* hide mobile content */
+.mobile-nav{
+  display: none;
+}
+.information-mobile{
+  display: none;
+}
 
-
-
-
-
+/* Header */
 header{
+  display: flex;
+  background-color: lightgray;
+  color: black;
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  /* margin: 0 auto; */
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.logo{
+  display: flex;
+  color: white;
+  align-items: center;
 
+}
+
+.logo h2{
+  font-weight: 400;
+}
+
+.logo h2 span{
+  color: red;
+}
+.logo img{
+  height: 2rem;
+}
+
+.desktop-nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding-left: 1rem;
+    font-weight: 200;
+}
+
+.desktop ul{
+  display: flex;
+}
+
+/* Main Content */
+.main_content{
+  top: 4rem;
+  position: relative;
+}
+.learn_something{
+/* background-color: grey; */
+/* display: flex; */
+}
+.learn_something .container{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(118, 131, 129);
+}
+.image-container img{
+  padding: 2rem 1.5rem;
+  width: 60%;
+  height: auto;
+}
+.learn_something .content{
+  width: 35%;
 }
